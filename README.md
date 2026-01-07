@@ -254,3 +254,13 @@ rather than as a production-ready system.
 ```bash
 git clone https://github.com/khlang12/ewha505.git
 # Open index.html in a browser
+```
+
+<br>
+
+---
+
+<br>
+
+## 데모 영상 Demo
+https://drive.google.com/file/d/1tXzu8Rs0H4BySpcns1kJAqVRhBPeL_-l/view
