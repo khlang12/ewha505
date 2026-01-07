@@ -1,6 +1,6 @@
 # MEP – Must-eat Place, Make Experience  
 *A campus-based food experience platform focused on sharing moments, not just restaurants.*
-
+![MEP Project Overview](assets/01-overview.jpg)
 <br>
 
 ---
@@ -8,7 +8,7 @@
 <br>
 
 ## 프로젝트 개요 (Overview)
-
+![Service Name & Concept](assets/03-service-name.jpg)
 **MEP (Must-eat Place, Make Experience)** 는  
 대학가 주변 맛집을 단순히 탐방하는 것을 넘어,  
 식사 경험 자체를 기록하고 공유하는 **경험 중심의 맛집 플랫폼**을 목표로 한 웹 서비스입니다.
@@ -96,7 +96,7 @@ The service prioritizes **clarity of user flow and consistency of concept** over
 <br>
 
 ## 기술적 접근 (Technical Approach)
-
+![Development Environment & Tech Stack](assets/04-development-environment.jpg)
 - **HTML / CSS / JavaScript**  
   서비스 구조를 명확히 드러내고 빠른 구현을 위해 사용  
 
@@ -127,6 +127,47 @@ within the given project timeline.
 
 All technical decisions were made based on  
 **service requirements and implementation scope**, rather than experimentation.
+
+<br>
+
+---
+
+<br>
+
+## 데이터베이스 구성 (Database Structure)
+![Database Structure](assets/05-database.jpg)
+
+MEP는 **Firebase Realtime Database**를 사용하여  
+서비스에서 생성되는 데이터를 실시간으로 관리합니다.
+
+각 데이터는 서비스 흐름과 사용자 경험을 기준으로 분리되어 있으며,  
+중복을 최소화하고 조회 효율을 높이는 구조로 설계했습니다.
+
+<br>
+
+### 데이터 구성
+- **foodcourse**  
+  사용자가 직접 구성하는 ‘쩝쩝박사 코스’ 데이터 저장  
+
+- **restaurant**  
+  맛집 기본 정보 및 위치 데이터 저장  
+
+- **menu**  
+  각 맛집에 속한 메뉴 정보 저장  
+
+- **review**  
+  사용자 리뷰 및 별점 데이터 저장  
+  (리뷰 작성 시 평균 별점 자동 반영)
+
+- **user**  
+  사용자 계정 및 활동 정보 저장  
+
+<br>
+
+The service uses **Firebase Realtime Database** to manage data in real time.
+
+Data is separated by domain (course, restaurant, menu, review, user)  
+to maintain clarity, scalability, and efficient access based on user flow.
 
 <br>
 
